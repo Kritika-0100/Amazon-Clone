@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone - Products</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="Amazon.css">
+ 
+</head>
+<body>
+  <header>
+    <h1>Amazon Clone</h1>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item" >
+      <a class="nav-link" href="index.html">Home</a>
+      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Amazonproducts.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Amazon.html#about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Amazoncart.html">Cart</a>
+          </li>
+        </ul>
+      </div>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="main">
+    <!-- Example product cards -->
+    <div class="product" id="cart-items">
+      <img src="Product images/aesthetic face brush.jpeg" alt="Product 1">
+      <h2>Aesthetic Face Brush</h2>
+      <p>Achieve flawless makeup application with our soft, aesthetic face brush</p>
+      <p class="price">&#x20B9 500</p>
+      <button class="add-to-cart" onclick="addToCart('Aesthetic Face Brush', 500)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/Apple AirPod Maxes _ Silver.jpeg" alt="Product 2">
+      <h2>Apple AirPod Maxes _ Silver</h2>
+      <p>Experience superior sound quality with Apple's premium AirPods Max in silver.</p>
+      <p class="price">&#x20B9 59,900</p>
+      <button class="add-to-cart" onclick="addToCart('Apple AirPod Maxes _ Silver', 59900)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/Cera Ve bodywash.jpeg" alt="Product 3">
+      <h2>Cera Ve Body Wash</h2>
+      <p>Keep your skin hydrated and clean with CeraVe's gentle bodywash</p>
+      <p class="price">&#x20B9 750</p>
+      <button class="add-to-cart" onclick="addToCart('Cera Ve Bodywash', 750)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/Apple tablet.jpeg" alt="Product 4">
+      <h2>Apple tablet</h2>
+      <p>Boost your productivity with Apple's latest tablet, offering top-notch performance.</p>
+      <p class="price">&#x20B9 30,000</p>
+      <button class="add-to-cart" onclick="addToCart('Apple tablet', 30000)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/cute fluffy toys.jpeg" alt="Product 5">
+      <h2>Cute Fluffy Toys</h2>
+      <p> Bring joy and comfort with our adorable fluffy duck toys.</p>
+      <p class="price">&#x20B9 250</p>
+      <button class="add-to-cart" onclick="addToCart('Cute Fluffy Toys', 250)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/black fan.jpeg" alt="Product 6">
+      <h2>Handheld Fan Black</h2>
+      <p> Stay cool on the go with our sleek black handheld fan. </p>
+      <p class="price">&#x20B9 400</p>
+      <button class="add-to-cart" onclick="addToCart('Handheld Fan Black', 400)">Add to cart</button>
+    </div>
+
+    <div class="product" id="cart-items">
+      <img src="Product images/phone holder.jpeg" alt="Product 7">
+      <h2>Phone Holder</h2>
+      <p>Securely hold your phone with our adjustable and durable phone holder.</p>
+      <p class="price">&#x20B9 279</p>
+      <button class="add-to-cart" onclick="addToCart('Phone Holder', 279)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/fluffy slipper rabbit.jpeg" alt="Product 8">
+      <h2>Fluffy Rabbit Slippers</h2>
+      <p>Enjoy ultimate comfort with our rabbit-themed fluffy slippers.</p>
+      <p class="price">&#x20B9 700</p>
+      <button class="add-to-cart" onclick="addToCart('Fluffy Rabbit Slippers', 700)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/Facial Massage Roller.jpeg" alt="Product 9">
+      <h2>Facial Massage Roller</h2>
+      <p>Promote blood circulation and reduce puffiness with our facial massage roller.</p>
+      <p class="price">&#x20B9 600</p>
+      <button class="add-to-cart" onclick="addToCart('Facial Massage Roller', 600)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/green headphones'.jpeg" alt="Product 10">
+      <h2>Green Headphones</h2>
+      <p> Enjoy your music in style with these vibrant green headphones from XYZ Company.</p>
+      <p class="price">&#x20B9 2000</p>
+      <button class="add-to-cart" onclick="addToCart('Green Headphones', 2000)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/blush.jpeg" alt="Product 11">
+      <h2>Blush</h2>
+      <p>Add a natural flush to your cheeks with our tinted blush. </p>
+      <p class="price">&#x20B9 300</p>
+      <button class="add-to-cart" onclick="addToCart('Blush', 300)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/face roller and gua sha.jpeg" alt="Product 12">
+      <h2>Face Roller and Gua Sha</h2>
+      <p> Enhance your skincare routine with this dual set for facial massage and contouring.</p>
+      <p class="price">&#x20B9 800</p>
+      <button class="add-to-cart" onclick="addToCart('Face Roller and Gua Sha', 800)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/fluffy slipper fox.jpeg" alt="Product 13">
+      <h2>Fluffy Fox Slippers</h2>
+      <p>Keep your feet warm and cozy with our fox-designed fluffy slippers</p>
+      <p class="price">&#x20B9 700</p>
+      <button class="add-to-cart" onclick="addToCart('Fluffy Fox Slipper', 700)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/brush set.jpeg" alt="Product 14">
+      <h2>Brush Set</h2>
+      <p></p>
+      <p class="price">&#x20B9 1200</p>
+      <button class="add-to-cart" onclick="addToCart('MakeUp Brush Set', 1200)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/hair straightner.jpeg" alt="Product 15">
+      <h2>Hair Straightener</h2>
+      <p> Get sleek, straight hair quickly with our high-performance hair straightener.</p>
+      <p class="price">&#x20B9 1500</p>
+      <button class="add-to-cart" onclick="addToCart('Hair Straightener', 1500)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/Handheld Fan.jpeg" alt="Product 16">
+      <h2>Handheld fan - White</h2>
+      <p>Beat the heat with our stylish white handheld fan.</p>
+      <p class="price">&#x20B9 400</p>
+      <button class="add-to-cart" onclick="addToCart('Handheld Fan White', 400)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/Heatless Hair Curler.jpeg" alt="Product 17">
+      <h2>Heatless Hair Curler</h2>
+      <p>Curl your hair effortlessly without heat damage with our innovative hair curler.</p>
+      <p class="price">&#x20B9 600</p>
+      <button class="add-to-cart" onclick="addToCart('Heatless Hair Curler', 600)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/mini fridge 1.jpeg" alt="Product 18">
+      <h2>Skincare Fridge</h2>
+      <p> Keep your beauty products fresh and cool with our mini skincare fridge</p>
+      <p class="price">&#x20B9 4500</p>
+      <button class="add-to-cart" onclick="addToCart('Skincare Fridge', 4500)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/stanley bottel (3).jpeg" alt="Product 19">
+      <h2>Stanley Bottles</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p class="price">&#x20B9 2200</p>
+      <button class="add-to-cart" onclick="addToCart('Stanley Bottles', 2200)">Add to cart</button>
+    </div>
+    
+    <div class="product" id="cart-items">
+      <img src="Product images/virtual reality headset.jpeg" alt="Product 20">
+      <h2>VR Headset</h2>
+      <p>Immerse yourself in a virtual world with our cutting-edge VR headset.</p>
+      <p class="price">&#x20B9 5000</p>
+      <button class="add-to-cart" onclick="addToCart('VR Headset', 500)">Add to cart</button>
+    </div>
+    
+    
+    <!-- More product cards can be added here -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Amazon Clone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+<script src="Amazon.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Amazon.css">
+</head>
+<body>
+  <header>
+    <h1>Amazon Clone</h1>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item" >
+      <a class="nav-link" href="index.html">Home</a>
+      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Amazonproducts.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Amazoncart.html">Cart</a>
+          </li>
+        </ul>
+      </div>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+<main>
+    <div class="main2">
+    <h1>Products</h1>
+    <br><br>
+    <div class="Beauty Tools">
+    <h3>Beauty Tools</h3>
+    <div class="category">
+        <div class="product" id="cart-items">
+            <img src="Product images/aesthetic face brush.jpeg" alt="Product 1">
+            <h4>Aesthetic face brush</h4>
+            <p class="price">&#x20B9 500</p>
+            <button class="add-to-cart" onclick="addToCart('Aesthetic face brush', 500)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="cart-items">
+            <img src="Product images/brush set.jpeg">
+            <h4>Brush Set</h4>
+            <p class="price">&#x20B9 1,200</p>
+            <button class="add-to-cart" onclick="addToCart('Brush Set', 1200)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="cart-items">
+            <img src="Product images/Facial Massage Roller.jpeg">
+            <h4>Facial Massage Roller</h4>
+            <p class="price">&#x20B9 600</p>
+            <button class="add-to-cart" onclick="addToCart('Facial Massage Roller', 600)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="cart-items">
+            <img src="Product images/Silicone Facial Cleaner.jpeg">
+            <h4>Silicone Facial Cleaner</h4>
+            <p class="price">&#x20B9 700</p>
+            <button class="add-to-cart" onclick="addToCart('Silicone Facial Brush', 700)">Add to Cart</button>
+        </div>
+       </div>
+    </div>
+
+    <div class="Beauty Tools">
+        <h3>Personal care gadgets</h3>
+        <div class="category">
+            <div class="product" id="cart-items">
+                <img src="Product images/black fan.jpeg" alt="Product 1">
+                <h4>Black Handheld Fan</h4>
+                <p class="price">&#x20B9 400</p>
+                <button class="add-to-cart" onclick="addToCart('Black handheld fan', 400)">Add to Cart</button>
+            </div>
+
+            <div class="product" id="cart-items">
+                <img src="Product images/mini fridge 2.jpeg">
+                <h4>Skin care fridge</h4>
+                <p class="price">&#x20B9 4,500</p>
+                <button class="add-to-cart" onclick="addToCart('Skin acre fridge', 4500)">Add to Cart</button>
+            </div>
+
+            <div class="product" id="cart-items">
+                <img src="Product images/ScalpMassager.jpeg">
+                <h4>Scalp Massager</h4>
+                <p class="price">&#x20B9 350</p>
+                <button class="add-to-cart" onclick="addToCart('Scalp Massager', 350)">Add to Cart</button>
+            </div>
+
+            <div class="product" id="cart-items">
+                <img src="Product images/rosegold fan.jpeg">
+                <h4>Rosegold Fan</h4>
+                <p class="price">&#x20B9 450</p>
+                <button class="add-to-cart" onclick="addToCart('Rosegold fan', 450)">Add to Cart</button>
+            </div>
+           </div>
+        </div>
+
+        <div class="Beauty Tools">
+            <h3>Electronic Gadgets</h3>
+            <div class="category">
+                <div class="product" id="cart-items">
+                    <img src="Product images/Apple AirPod Maxes _ Silver.jpeg" alt="Product 1">
+                    <h4>Apple AirPod Maxes _ Silver</h4>
+                    <p class="price">&#x20B9 59,900</p>
+                    <button class="add-to-cart" onclick="addToCart('Apple AirPod Maxes _ Silver', 59900)">Add to cart</button>
+                </div>
+    
+                <div class="product" id="cart-items">
+                    <img src="Product images/Apple tablet.jpeg">
+                    <h4>Apple tablet</h4>
+                    <p class="price">&#x20B9 30,000</p>
+                    <button class="add-to-cart" onclick="addToCart('Apple tablet', 30000)">Add to cart</button>
+                </div>
+    
+                <div class="product" id="cart-items">
+                    <img src="Product images/green headphones'.jpeg" alt="Product 10">
+                    <h4>Green Headphones</h4>
+                    <p class="price">&#x20B9 2000</p>
+                    <button class="add-to-cart" onclick="addToCart('Green Headphones', 2000)">Add to cart</button>
+                </div>
+    
+                <div class="product" id="cart-items">
+                    <img src="Product images/virtual reality headset.jpeg" alt="Product 20">
+                    <h4>VR Headset</h4>
+                    <p class="price">&#x20B9 5000</p>
+                    <button class="add-to-cart" onclick="addToCart('VR Headset', 500)">Add to cart</button>
+                 </div>
+               </div>
+            </div>
+        </div>
+</main>
+
+   
+
+  <!-- About Us Section -->
+  <section id="about-us">
+    <div class="container-about">
+      <h2>About Us</h2>
+      <p >Welcome to Amazon Clone, where we bring you a frontend replica of the popular Amazon shopping experience. While we currently do not have backend functionality, our platform showcases a wide range of products across various categories, offering an intuitive browsing and shopping interface. Our mission is to provide you with a seamless shopping experience, focusing on product presentation, user-friendly navigation, and reliable information. Explore our collection of electronics, fashion items, books, and more, and enjoy the convenience of shopping online with Amazon Clone.</p>
+    </div>
+  </section>
+  <br>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <p>&copy; 2024 Amazon Clone. All rights reserved.</p>
+    </div>
+    
+  </footer>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="Amazon.js"></script>
+</body>
+</html>

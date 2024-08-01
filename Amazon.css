@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #232f3e;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 2000px;
+  scroll-behavior: noscroll;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.category {
+  margin-bottom: 2rem;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  flex: 1 0 30%; /* added flexbox properties */
+}
+
+.product img {
+  max-width: 100px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e68a00;
+}
+
+button.remove {
+  size: 20px;
+  background-color: red;
+  font-size: 10px;
+  display: grid;
+}
+/* Custom styles */
+/* Reset styles and basic typography */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #131921;
+  color: #FFF;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #232f3e;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Main content area */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Product card styles */
+.product {
+  background-color: #FFF;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(33.33% - 200px);
+  box-sizing: border-box;
+}
+
+.product img {
+  width: 100px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  color: #555;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.product .price {
+  color: red;
+}
+
+p.price {
+  color: red;
+  font-size: 25px;
+}
+
+.add-to-cart {
+  background-color: #2b98d7;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Footer styles */
+footer {
+  background-color: #232f3e;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+}
+
+h2 {
+  background-color: #232f3e;
+  color: #ddd;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 6px;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+}
+
+h3 {
+  background-color: #232f3e;
+  color: #ddd;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 6px;
+}
+
+.category {
+  background-color: #ddd;
+  display: flex;
+}
+
+.mainproducts {
+  position: relative;
+  width: 100%;
+}
+
+/* Media queries */
+/* Large screens */
+@media only screen and (min-width: 1200px) {
+  .product {
+    flex: 1 0 25%;
+  }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .product {
+    flex: 1 0 33.33%;
+  }
+}
+
+/* Small screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .product {
+    flex: 1 0 50%;
+  }
+}
+
+/* Extra small screens */
+@media only screen and (max-width: 767px) {
+  .product {
+    flex: 1 0 100%;
+  }
+}
